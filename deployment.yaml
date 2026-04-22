@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+mename: brain-app
+spec:
+  replicas: 2
+  selector:
+    maapp: brain-app
+  template:
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: brain-app
+spec:
+  replicas: 2
+  selector:
+    maapp: brain-app
+  template:
+    melaapp: brain-app
+    sp- - containerPort: 3000l>
