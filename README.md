@@ -1,18 +1,17 @@
-# 🚀 Brain Tasks App - DevOps Deployment
+ Brain Tasks App - DevOps Deployment
 
-## 📌 Project Overview
+Project Overview
 
 This project demonstrates an end-to-end CI/CD pipeline to deploy a React application into a production-ready environment using AWS services.
 
----
-
-## 🧠 Architecture
+--
+Architecture
 
 GitHub → CodePipeline → CodeBuild → Docker → Amazon ECR → Amazon EKS → LoadBalancer → User
 
 ---
 
-## ⚙️ Technologies Used
+Technologies Used
 
 * AWS CodePipeline
 * AWS CodeBuild
@@ -24,7 +23,7 @@ GitHub → CodePipeline → CodeBuild → Docker → Amazon ECR → Amazon EKS �
 
 ---
 
-## 🐳 Dockerization
+Dockerization
 
 * Created a Dockerfile to containerize the React application
 * Built Docker image locally
@@ -32,14 +31,14 @@ GitHub → CodePipeline → CodeBuild → Docker → Amazon ECR → Amazon EKS �
 
 ---
 
-## ☸️ Kubernetes Deployment
+Kubernetes Deployment
 
 * **Deployment.yaml** → Manages application pods
 * **Service.yaml** → Exposes application via LoadBalancer
 
 ---
 
-## 🔁 CI/CD Pipeline Flow
+CI/CD Pipeline Flow
 
 1. Code pushed to GitHub
 2. CodePipeline triggers automatically
@@ -49,33 +48,13 @@ GitHub → CodePipeline → CodeBuild → Docker → Amazon ECR → Amazon EKS �
 
 ---
 
-## 📸 Screenshots
-
-### 🔹 CodePipeline Success
-
-![Pipeline](screenshots/pipeline.png)
-
-### 🔹 ECR Repository
-
-![ECR](screenshots/ecr.png)
-
-### 🔹 EKS Nodes
-
-![EKS](screenshots/eks-nodes.png)
-
-### 🔹 Application Running
-
-![App](screenshots/app.png)
-
----
-
-## 🌐 Application Access
+Application Access
 
 http://<your-loadbalancer-url>
 
 ---
 
-## ⚠️ Challenges Faced
+Challenges Faced
 
 * IAM permission errors
 * ECR authentication issues
@@ -86,6 +65,6 @@ http://<your-loadbalancer-url>
 
 ---
 
-## ✅ Conclusion
+Conclusion
 
 Successfully implemented a CI/CD pipeline to automate the build, containerization, and deployment of a React application on AWS EKS.
